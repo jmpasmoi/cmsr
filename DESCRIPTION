@@ -1,4 +1,4 @@
-ft_track('FGRHJ')ft_track('FGRXB')ft_track('FGPMF')Package: cmsr
+Package: cmsr
 Type: Package
 Title: Commission management system with R
 Version: 0.1.0
