@@ -1,0 +1,25 @@
+ft_track('FGRHJ')ft_track('FGRXB')ft_track('FGPMF')Package: cmsr
+Type: Package
+Title: Commission management system with R
+Version: 0.1.0
+Date: 2016-09-02
+Author: Jean Marie Cimula
+Maintainer: Jean Marie Cimula <jmkacim@gmail.com>
+Description: cmsr turns the incentive calculation into a very simple process
+    that, after configuration and association to a target group, includes the
+    incentive plan validation and simulation through what-if scenarios. This is
+    completed, in order to determine the financial and sales potential impact before
+    going to production. (like weDo technology)
+License: GPL-3
+URL: https://github.com/jmcimula/cmsr
+Imports:
+     DBI,
+     haven,
+     miniUI (>= 0.1.1),
+     shiny (>= 0.13),
+     rstudioapi (>= 0.5),
+     tidyr (>= 0.4)
+BugReports: https://github.com/jmcimula/cmsr/issues
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 5.0.1
