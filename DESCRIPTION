@@ -9,16 +9,16 @@ Description: cmsr turns the incentive calculation into a very simple process
     that, after configuration and association to a target group, includes the
     incentive plan validation and simulation through what-if scenarios. This is
     completed, in order to determine the financial and sales potential impact before
-    going to production. (like weDo technology)
+    going to production (like weDo technology)
 License: GPL-3
 URL: https://github.com/jmcimula/cmsr
 Imports:
-     DBI,
-     haven,
-     miniUI (>= 0.1.1),
-     shiny (>= 0.13),
-     rstudioapi (>= 0.5),
-     tidyr (>= 0.4)
+    DBI,
+    haven,
+    miniUI (>= 0.1.1),
+    shiny (>= 0.13),
+    rstudioapi (>= 0.5),
+    tidyr (>= 0.4)
 BugReports: https://github.com/jmcimula/cmsr/issues
 Encoding: UTF-8
 LazyData: true
