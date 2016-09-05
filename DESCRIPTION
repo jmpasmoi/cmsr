@@ -13,12 +13,8 @@ Description: cmsr turns the incentive calculation into a very simple process
 License: GPL-3
 URL: https://github.com/jmcimula/cmsr
 Imports:
-    DBI,
-    haven,
-    miniUI (>= 0.1.1),
-    shiny (>= 0.13),
-    rstudioapi (>= 0.5),
-    tidyr (>= 0.4)
+    magrittr,
+    dplyr
 BugReports: https://github.com/jmcimula/cmsr/issues
 Encoding: UTF-8
 LazyData: true
