@@ -2,3 +2,5 @@
 
 export(cms_markdown)
 export(cms_markup)
+export(cmscalc)
+importFrom(magrittr,"%>%")
