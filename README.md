@@ -14,8 +14,10 @@ devtools::install_github("jmcimula/cmsr")
 
 ## Key functions
 
+* `data(cmsales)`: A dataset containing the sales reps activities
 * `cms_markdown()`: commission based on the Mark Down value
 * `cms_markup()`: commission based on the Mark Up value
+* `cmscalc()`: calculation of commission of sales reps
 
 ## Licence
 
