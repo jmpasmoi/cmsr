@@ -23,3 +23,6 @@ devtools::install_github("jmcimula/cmsr")
 
 GPL (>= 2)
 
+### Author
+
+Jean Marie Cimula
