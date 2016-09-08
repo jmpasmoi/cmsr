@@ -18,6 +18,7 @@ devtools::install_github("jmcimula/cmsr")
 * `cms_markdown()`: commission based on the Mark Down value
 * `cms_markup()`: commission based on the Mark Up value
 * `cmscalc()`: calculation of commission of sales reps
+* `cmscalc()`: calculation of the bonus based on the performance of the sales reps
 
 ## Licence
 
