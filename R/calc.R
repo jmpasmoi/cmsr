@@ -24,19 +24,32 @@ cmscalc <- function (df, ..., com.type = c("Markdown","Markup"), rmv.na = TRUE){
   if(length(tp) > 1){ warning("Please entry only one commission type either Markdown or Markup") }
   else{ tp <- tolower(tp) }
 
-  df <- df %>% dplyr::group_by(sales_rep_id, region) %>%
-        dplyr::summarise(total_prod = sum(total_prod), target = sum(target), price = mean(price), mean_discount=mean(discountprice), sales=sum(sales), mean_cost=mean(cost)) %>%
-        dplyr::mutate(total_price = price * sales, total_cost = sales * mean_cost, total_disc = sales * mean_discount)
+  df <- df %>% dplyr::group_by(sales_rep_id, region, product) %>%
+               dplyr::mutate(
+                      bonus = cms_kpi_rate(total_prod,target,sales,cost),
+                      total_price = price * total_prod,
+                      total_cost = sales * cost,
+                      total_disc = sales * discountprice
+                  )%>%
+               dplyr::summarise(
+                      total_prod = sum(total_prod),
+                      target = sum(target),
+                      sales=sum(sales),
+                      total_price=sum(total_price),
+                      total_disc=sum(total_disc),
+                      total_sales=sum(total_cost), #or total_cost
+                      bonus=sum(bonus)
+                )
 
   if(tp == "markup"){
 
-    dfa <- dplyr::mutate(df, markup = cms_markup(total_price, total_cost))
+    dfa <- dplyr::mutate(df, markup = cms_markup(total_price, total_sales) )
 
   }else if(tp == "markdown"){
 
     dfa <- dplyr::mutate(df, markdown = cms_markdown(total_price, total_disc))
 
-  }else{ dfa <- "Please entry only one commission type either Markdown or Markup" }
+  }else{ stop("Please entry only one commission type either Markdown or Markup") }
 
-  return(dfa)
+  return(as.data.frame(dfa))
 }
