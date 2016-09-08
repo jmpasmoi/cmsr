@@ -19,12 +19,8 @@ cms_markup <- function(price,product){
 
   spp <- price
   csp <- product
-  markup <- spp-csp
 
-  if(markup < 0){stop("Markup shall be positive")}
-
-  return((markup/csp)*100)
-
+  return(ifelse(spp >= csp,(spp-csp)/csp,0))
 }
 
 #'Commission based on the Mark Down Percentage
@@ -50,9 +46,27 @@ cms_markdown <- function(price,disc.price){
    p <- price
    dp <- disc.price
 
-   markdown <- p-dp
+   return(ifelse(p >= dp,(p-dp)/p,0))
+}
 
-   if(markdown < 0){stop("Markdown shall be positive")}
+#'Sales Commission Rates on bonus
+#'
+#' @param total_prod total of products a sale rep shall sell
+#' @param target threshold to reach by the sales reps
+#' @param sales achievement in term of products sold
+#' @param cost mean of price and discount price
+#'
+#' @author
+#' Jean Marie Cimula
+#'
+#' @details
+#' Calculation of the bonus based on the performance of the sales reps. It depends to your commercial policies
+#'
+#' @export
+#'
 
-   return((markdown/p)*100)
+cms_kpi_rate <- function(total_prod,target,sales,cost){
+
+ return(ifelse(sales >= target, cost * (sales/total_prod), 0))
+
 }
