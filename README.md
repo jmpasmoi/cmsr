@@ -23,9 +23,7 @@ devtools::install_github("jmcimula/cmsr")
 ## Example 
 
 ``` r
-#library(cmsr) # for functions
-
-#> library(cmsr)
+library(cmsr) # for functions
 
 #> cmscalc(cmsales,com.type="Markdown",rmv.na= TRUE)
 #   sales_rep_id   region product total_prod target sales total_price total_disc total_sales      bonus  markdown
