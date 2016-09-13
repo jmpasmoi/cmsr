@@ -53,3 +53,42 @@ cmscalc <- function (df, ..., com.type = c("Markdown","Markup"), rmv.na = TRUE){
 
   return(as.data.frame(dfa))
 }
+
+#' Activation tracking of sales forces
+#'
+#' @param df data.frame
+#' @param region filter the region of activities. Default "ALL"
+#' @param from the beginning of the period eg."2016-06-01"
+#' @param to the end of the period eg."2016-06-30"
+#' @export
+#'
+#' @details
+#'
+#' @author
+#' Jean Marie Cimula
+#'
+#' @importFrom magrittr %>%
+#'
+cms_tracker <- function(   dataframe,
+                                ...,
+                                region="ALL",
+                                from=FALSE,
+                                to=FALSE,
+                                set.target=c("50","50","50","50","50","50")
+                        ){
+
+  ###if to void then (from = to and sum)
+  ###if to and from void then (sum all)
+  ###if region missing then (print all) else (get value and filter)
+  ###set.target depends to the commercial policies in order to judge the achievement of salesforce
+
+  #Not finished
+  #:P
+
+  df <- df %>%
+        dplyr::filter(as.Date(date, "%m/%d/%Y") >= from && as.Date(date, "%m/%d/%Y") <= to ) %>%
+        dplyr::group_by(agent_id, activation) %>% dplyr::summarise(nb =sum(nb_subs))
+
+  tidyr::spread(df,activation,nb)
+
+}
