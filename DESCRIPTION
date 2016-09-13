@@ -14,7 +14,8 @@ License: GPL-3
 URL: https://github.com/jmcimula/cmsr
 Imports:
     magrittr,
-    dplyr
+    dplyr,
+    tidyr
 BugReports: https://github.com/jmcimula/cmsr/issues
 Encoding: UTF-8
 LazyData: true
