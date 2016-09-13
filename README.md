@@ -15,6 +15,7 @@ devtools::install_github("jmcimula/cmsr")
 ## Key functions
 
 * `data(cmsales)`: A dataset containing the sales reps activities
+* `data(cmstelecom)`: Activation tracking of sales forces in telecom industry
 * `cms_markdown()`: commission based on the Mark Down value
 * `cms_markup()`: commission based on the Mark Up value
 * `cmscalc()`: calculation of commission of sales reps
@@ -48,10 +49,10 @@ library(cmsr) # for functions
 #19     SLREP004 bandundu    Shoe        200    152   161     1398.00  1046.6127   1086.0014 11.2872190 0.2513500
 #20     SLREP004 bandundu    Soap        225    170   182      180.00   135.4080    140.5040  1.4987717 0.2477333
 ```
-## Licence
-
-GPL (>= 2)
-
 ### Author
 
 Jean Marie Cimula
+
+## Licence
+
+GPL (>= 2)
