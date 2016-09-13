@@ -3,5 +3,6 @@
 export(cms_kpi_rate)
 export(cms_markdown)
 export(cms_markup)
+export(cms_tracker)
 export(cmscalc)
 importFrom(magrittr,"%>%")
