@@ -60,6 +60,7 @@ cmscalc <- function (df, ..., com.type = c("Markdown","Markup"), rmv.na = TRUE){
 #' @param region filter the region of activities. Default "ALL"
 #' @param from the beginning of the period eg."2016-06-01"
 #' @param to the end of the period eg."2016-06-30"
+#' @param set.target xxxxxxxxx
 #' @export
 #'
 #' @details
@@ -76,6 +77,8 @@ cms_tracker <- function(   dataframe,
                                 to=FALSE,
                                 set.target=c("50","50","50","50","50","50")
                         ){
+
+  df <- cmstelecom
 
   ###if to void then (from = to and sum)
   ###if to and from void then (sum all)
