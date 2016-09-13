@@ -1,0 +1,85 @@
+agent_id,region,activation,wording,nb_subs,date
+SLREP001,kinshasa,PREACT,Preactivation,32,6/1/2016
+SLREP001,kinshasa,NWR,New with revenue,28,6/1/2016
+SLREP001,kinshasa,ADJ,Adjustment,26,6/1/2016
+SLREP001,kinshasa,GCN,Gross Connection,54,6/1/2016
+SLREP001,kinshasa,DISC,Disconnection,64,6/1/2016
+SLREP001,kinshasa,REC,Reconnection,9,6/1/2016
+SLREP001,kinshasa,NN,Net New (or Add),-1,6/1/2016
+SLREP001,kinshasa,PREACT,Preactivation,47,6/2/2016
+SLREP001,kinshasa,NWR,New with revenue,50,6/2/2016
+SLREP001,kinshasa,ADJ,Adjustment,70,6/2/2016
+SLREP001,kinshasa,GCN,Gross Connection,120,6/2/2016
+SLREP001,kinshasa,DISC,Disconnection,74,6/2/2016
+SLREP001,kinshasa,REC,Reconnection,20,6/2/2016
+SLREP001,kinshasa,NN,Net New (or Add),66,6/2/2016
+SLREP001,kinshasa,PREACT,Preactivation,12,6/3/2016
+SLREP001,kinshasa,NWR,New with revenue,11,6/3/2016
+SLREP001,kinshasa,ADJ,Adjustment,9,6/3/2016
+SLREP001,kinshasa,GCN,Gross Connection,20,6/3/2016
+SLREP001,kinshasa,DISC,Disconnection,25,6/3/2016
+SLREP001,kinshasa,REC,Reconnection,1,6/3/2016
+SLREP001,kinshasa,NN,Net New (or Add),-4,6/3/2016
+SLREP001,kinshasa,PREACT,Preactivation,100,6/4/2016
+SLREP001,kinshasa,NWR,New with revenue,12,6/4/2016
+SLREP001,kinshasa,ADJ,Adjustment,50,6/4/2016
+SLREP001,kinshasa,GCN,Gross Connection,62,6/4/2016
+SLREP001,kinshasa,DISC,Disconnection,60,6/4/2016
+SLREP001,kinshasa,REC,Reconnection,16,6/4/2016
+SLREP001,kinshasa,NN,Net New (or Add),18,6/4/2016
+SLREP002,kinshasa,PREACT,Preactivation,52,6/1/2016
+SLREP002,kinshasa,NWR,New with revenue,30,6/1/2016
+SLREP002,kinshasa,ADJ,Adjustment,56,6/1/2016
+SLREP002,kinshasa,GCN,Gross Connection,86,6/1/2016
+SLREP002,kinshasa,DISC,Disconnection,12,6/1/2016
+SLREP002,kinshasa,REC,Reconnection,14,6/1/2016
+SLREP002,kinshasa,NN,Net New (or Add),88,6/1/2016
+SLREP002,kinshasa,PREACT,Preactivation,55,6/2/2016
+SLREP002,kinshasa,NWR,New with revenue,31,6/2/2016
+SLREP002,kinshasa,ADJ,Adjustment,17,6/2/2016
+SLREP002,kinshasa,GCN,Gross Connection,48,6/2/2016
+SLREP002,kinshasa,DISC,Disconnection,1,6/2/2016
+SLREP002,kinshasa,REC,Reconnection,28,6/2/2016
+SLREP002,kinshasa,NN,Net New (or Add),75,6/2/2016
+SLREP002,kinshasa,PREACT,Preactivation,91,6/3/2016
+SLREP002,kinshasa,NWR,New with revenue,75,6/3/2016
+SLREP002,kinshasa,ADJ,Adjustment,19,6/3/2016
+SLREP002,kinshasa,GCN,Gross Connection,94,6/3/2016
+SLREP002,kinshasa,DISC,Disconnection,9,6/3/2016
+SLREP002,kinshasa,REC,Reconnection,12,6/3/2016
+SLREP002,kinshasa,NN,Net New (or Add),97,6/3/2016
+SLREP002,kinshasa,PREACT,Preactivation,89,6/4/2016
+SLREP002,kinshasa,NWR,New with revenue,56,6/4/2016
+SLREP002,kinshasa,ADJ,Adjustment,39,6/4/2016
+SLREP002,kinshasa,GCN,Gross Connection,95,6/4/2016
+SLREP002,kinshasa,DISC,Disconnection,25,6/4/2016
+SLREP002,kinshasa,REC,Reconnection,16,6/4/2016
+SLREP002,kinshasa,NN,Net New (or Add),86,6/4/2016
+SLREP003,kinshasa,PREACT,Preactivation,63,6/1/2016
+SLREP003,kinshasa,NWR,New with revenue,57,6/1/2016
+SLREP003,kinshasa,ADJ,Adjustment,30,6/1/2016
+SLREP003,kinshasa,GCN,Gross Connection,87,6/1/2016
+SLREP003,kinshasa,DISC,Disconnection,13,6/1/2016
+SLREP003,kinshasa,REC,Reconnection,9,6/1/2016
+SLREP003,kinshasa,NN,Net New (or Add),83,6/1/2016
+SLREP003,kinshasa,PREACT,Preactivation,94,6/2/2016
+SLREP003,kinshasa,NWR,New with revenue,25,6/2/2016
+SLREP003,kinshasa,ADJ,Adjustment,18,6/2/2016
+SLREP003,kinshasa,GCN,Gross Connection,43,6/2/2016
+SLREP003,kinshasa,DISC,Disconnection,45,6/2/2016
+SLREP003,kinshasa,REC,Reconnection,16,6/2/2016
+SLREP003,kinshasa,NN,Net New (or Add),14,6/2/2016
+SLREP003,kinshasa,PREACT,Preactivation,71,6/3/2016
+SLREP003,kinshasa,NWR,New with revenue,55,6/3/2016
+SLREP003,kinshasa,ADJ,Adjustment,23,6/3/2016
+SLREP003,kinshasa,GCN,Gross Connection,78,6/3/2016
+SLREP003,kinshasa,DISC,Disconnection,11,6/3/2016
+SLREP003,kinshasa,REC,Reconnection,25,6/3/2016
+SLREP003,kinshasa,NN,Net New (or Add),92,6/3/2016
+SLREP003,kinshasa,PREACT,Preactivation,11,6/4/2016
+SLREP003,kinshasa,NWR,New with revenue,9,6/4/2016
+SLREP003,kinshasa,ADJ,Adjustment,2,6/4/2016
+SLREP003,kinshasa,GCN,Gross Connection,11,6/4/2016
+SLREP003,kinshasa,DISC,Disconnection,3,6/4/2016
+SLREP003,kinshasa,REC,Reconnection,4,6/4/2016
+SLREP003,kinshasa,NN,Net New (or Add),12,6/4/2016
