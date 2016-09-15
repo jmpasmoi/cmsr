@@ -4,7 +4,7 @@
 \name{cmstelecom}
 \alias{cmstelecom}
 \title{Activation tracking of sales forces in telecom industry}
-\format{A data frame with 84 rows and 6 variables:
+\format{A data frame with 140 rows and 6 variables:
 \itemize{
   \item sales_rep_id: the id of each salesforce
   \item region: geographical region of acitivies
