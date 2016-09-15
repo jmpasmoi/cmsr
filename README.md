@@ -49,6 +49,19 @@ library(cmsr) # for functions
 #19     SLREP004 bandundu    Shoe        200    152   161     1398.00  1046.6127   1086.0014 11.2872190 0.2513500
 #20     SLREP004 bandundu    Soap        225    170   182      180.00   135.4080    140.5040  1.4987717 0.2477333
 ```
+
+This dashboard could allow the GTM (GoToMarket) teams to track the performance in acquisition (Activations, Gross connection, reconnection, Churn, Net Add) in order to enhance the visibility of activations carried out by the sales forces.
+
+#``` r
+#> cms_tracker(cmstelecom, region = c("kinshasa","katanga","bandundu"), from = "2016-06-01", to = "2016-06-03")
+#  agent_id ADJ DISC GCN  NN NWR PREACT REC
+#1 SLREP001 105  163 194  61  89     91  30
+#2 SLREP002  92   22 228 260 136    198  54
+#3 SLREP003  71   69 208 189 137    228  50
+#4 SLREP004 120   46 276 277 156    276  47
+#5 SLREP005  65  103 161 126  96    193  68
+```
+
 ### Author
 
 Jean Marie Cimula
