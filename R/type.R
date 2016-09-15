@@ -70,3 +70,11 @@ cms_kpi_rate <- function(total_prod,target,sales,cost){
  return(ifelse(sales >= target, cost * (sales/total_prod), 0))
 
 }
+
+#'Date Management
+#' @export
+cmsdate <- function(x, a, b){
+
+  x <= b &  x>= a
+
+}
