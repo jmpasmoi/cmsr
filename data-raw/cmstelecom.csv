@@ -83,3 +83,59 @@ SLREP003,kinshasa,GCN,Gross Connection,11,6/4/2016
 SLREP003,kinshasa,DISC,Disconnection,3,6/4/2016
 SLREP003,kinshasa,REC,Reconnection,4,6/4/2016
 SLREP003,kinshasa,NN,Net New (or Add),12,6/4/2016
+SLREP004,katanga,PREACT,Preactivation,111,6/1/2016
+SLREP004,katanga,NWR,New with revenue,85,6/1/2016
+SLREP004,katanga,ADJ,Adjustment,65,6/1/2016
+SLREP004,katanga,GCN,Gross Connection,150,6/1/2016
+SLREP004,katanga,DISC,Disconnection,20,6/1/2016
+SLREP004,katanga,REC,Reconnection,31,6/1/2016
+SLREP004,katanga,NN,Net New (or Add),161,6/1/2016
+SLREP004,katanga,PREACT,Preactivation,67,6/2/2016
+SLREP004,katanga,NWR,New with revenue,28,6/2/2016
+SLREP004,katanga,ADJ,Adjustment,28,6/2/2016
+SLREP004,katanga,GCN,Gross Connection,56,6/2/2016
+SLREP004,katanga,DISC,Disconnection,11,6/2/2016
+SLREP004,katanga,REC,Reconnection,7,6/2/2016
+SLREP004,katanga,NN,Net New (or Add),52,6/2/2016
+SLREP004,katanga,PREACT,Preactivation,98,6/3/2016
+SLREP004,katanga,NWR,New with revenue,43,6/3/2016
+SLREP004,katanga,ADJ,Adjustment,27,6/3/2016
+SLREP004,katanga,GCN,Gross Connection,70,6/3/2016
+SLREP004,katanga,DISC,Disconnection,15,6/3/2016
+SLREP004,katanga,REC,Reconnection,9,6/3/2016
+SLREP004,katanga,NN,Net New (or Add),64,6/3/2016
+SLREP004,katanga,PREACT,Preactivation,56,6/4/2016
+SLREP004,katanga,NWR,New with revenue,29,6/4/2016
+SLREP004,katanga,ADJ,Adjustment,14,6/4/2016
+SLREP004,katanga,GCN,Gross Connection,43,6/4/2016
+SLREP004,katanga,DISC,Disconnection,78,6/4/2016
+SLREP004,katanga,REC,Reconnection,6,6/4/2016
+SLREP004,katanga,NN,Net New (or Add),-29,6/4/2016
+SLREP005,bandundu,PREACT,Preactivation,78,6/1/2016
+SLREP005,bandundu,NWR,New with revenue,46,6/1/2016
+SLREP005,bandundu,ADJ,Adjustment,31,6/1/2016
+SLREP005,bandundu,GCN,Gross Connection,77,6/1/2016
+SLREP005,bandundu,DISC,Disconnection,19,6/1/2016
+SLREP005,bandundu,REC,Reconnection,48,6/1/2016
+SLREP005,bandundu,NN,Net New (or Add),106,6/1/2016
+SLREP005,bandundu,PREACT,Preactivation,27,6/2/2016
+SLREP005,bandundu,NWR,New with revenue,10,6/2/2016
+SLREP005,bandundu,ADJ,Adjustment,9,6/2/2016
+SLREP005,bandundu,GCN,Gross Connection,19,6/2/2016
+SLREP005,bandundu,DISC,Disconnection,47,6/2/2016
+SLREP005,bandundu,REC,Reconnection,12,6/2/2016
+SLREP005,bandundu,NN,Net New (or Add),-16,6/2/2016
+SLREP005,bandundu,PREACT,Preactivation,88,6/3/2016
+SLREP005,bandundu,NWR,New with revenue,40,6/3/2016
+SLREP005,bandundu,ADJ,Adjustment,25,6/3/2016
+SLREP005,bandundu,GCN,Gross Connection,65,6/3/2016
+SLREP005,bandundu,DISC,Disconnection,37,6/3/2016
+SLREP005,bandundu,REC,Reconnection,8,6/3/2016
+SLREP005,bandundu,NN,Net New (or Add),36,6/3/2016
+SLREP005,bandundu,PREACT,Preactivation,111,6/4/2016
+SLREP005,bandundu,NWR,New with revenue,27,6/4/2016
+SLREP005,bandundu,ADJ,Adjustment,3,6/4/2016
+SLREP005,bandundu,GCN,Gross Connection,30,6/4/2016
+SLREP005,bandundu,DISC,Disconnection,56,6/4/2016
+SLREP005,bandundu,REC,Reconnection,15,6/4/2016
+SLREP005,bandundu,NN,Net New (or Add),-11,6/4/2016
