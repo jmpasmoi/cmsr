@@ -10,11 +10,13 @@ cms_tracker(dataframe, ..., region = "ALL", from = FALSE, to = FALSE,
 \arguments{
 \item{region}{filter the region of activities. Default "ALL"}
 
-\item{from}{the beginning of the period eg."2016-06-01"}
-
 \item{to}{the end of the period eg."2016-06-30"}
 
+\item{set.target}{depends to the commercial policies in order to judge the achievement of salesforce}
+
 \item{df}{data.frame}
+
+\item{dt_from}{the beginning of the period eg."2016-06-01"}
 }
 \description{
 Activation tracking of sales forces
