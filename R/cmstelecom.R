@@ -2,7 +2,7 @@
 #'
 #' A dataset containing the sales forces activities. The variables are as follows:
 #'
-#' @format A data frame with 84 rows and 6 variables:
+#' @format A data frame with 140 rows and 6 variables:
 #' \itemize{
 #'   \item sales_rep_id: the id of each salesforce
 #'   \item region: geographical region of acitivies
