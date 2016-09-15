@@ -52,7 +52,7 @@ library(cmsr) # for functions
 
 This dashboard could allow the GTM (GoToMarket) teams to track the performance in acquisition (Activations, Gross connection, reconnection, Churn, Net Add) in order to enhance the visibility of activations carried out by the sales forces.
 
-#``` r
+``` r
 #> cms_tracker(cmstelecom, region = c("kinshasa","katanga","bandundu"), from = "2016-06-01", to = "2016-06-03")
 #  agent_id ADJ DISC GCN  NN NWR PREACT REC
 #1 SLREP001 105  163 194  61  89     91  30
