@@ -78,9 +78,6 @@ cms_tracker <- function(   dataframe,
                                 set.target=c("50","50","50","50","50","50")
                         ){
 
-  df <- dataframe
-
-
   f <- formals(cms_tracker)
 
   namesize <- names(f)
@@ -93,18 +90,44 @@ cms_tracker <- function(   dataframe,
 
   set <- do.call(missing, list(namesize[6]))
 
-  ###if to void then (from = to and sum)
-  ###if to and from void then (sum all)
-  ###if region missing then (print all) else (get value and filter)
   ###set.target depends to the commercial policies in order to judge the achievement of salesforce
 
-  #Not finished
-  #:P
+  df <- as.data.frame(dataframe)
 
-  df <- df %>%
-        dplyr::filter(as.Date(date, "%m/%d/%Y") >= from && as.Date(date, "%m/%d/%Y") <= to ) %>%
-        dplyr::group_by(agent_id, activation) %>% dplyr::summarise(nb =sum(nb_subs))
+  if(reg==FALSE){
 
-  tidyr::spread(df,activation,nb)
+    r <- tolower(region)
+
+    df <- subset(df, df$region %in% r)
+
+  }else{df <- df}
+
+  nb_row <- nrow(df)
+
+  if(nb_row < 1){stop("No records found with your entries")}
+
+  if(from==TRUE && to==TRUE){ from <- 0; to <- 0}
+
+  if(from==TRUE && to==FALSE){ from <- to}
+
+  if(from==FALSE && to==TRUE){ to <- from}
+
+  if(from==FALSE && to==FALSE){ from <- from; to <- to}
+
+
+  if(from == 0 && to == 0){
+
+    df <- df %>% dplyr::group_by(agent_id,activation) %>% dplyr::summarise(nb =sum(nb_subs))
+
+  }else{
+
+    df <- df[cmsdate(as.Date(df$date,"%m/%d/%Y"), from, to),]
+
+    df <- df %>% dplyr::group_by(agent_id,activation) %>% dplyr::summarise(nb =sum(nb_subs))
+  }
+
+  print(from)
+  print(to)
+ #tidyr::spread(df,activation,nb)
 
 }
