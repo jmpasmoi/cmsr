@@ -67,7 +67,10 @@ It is possible to fix the target in acquisition for tracking the performance of 
 How to run this function with the target:
 
 ``` r
-cms_tracker(cmstelecom, region = c("kinshasa","katanga","bandundu"), from = "2016-06-01", to = "2016-06-03", set.target = c(100,130,90,80,75,120,100))
+cms_tracker(cmstelecom, region = c("kinshasa","katanga","bandundu"), 
+                        from = "2016-06-01", to = "2016-06-03", 
+						set.target = c(100,130,90,80,75,120,100)
+			)
 ```
 
 ### Author
