@@ -41,11 +41,11 @@ cmscalc <- function (df, ..., com.type = c("Markdown","Markup"), rmv.na = TRUE){
                       bonus=sum(bonus)
                 )
 
-  if(tp == "markup"){
+  if(tp  ==  "markup"){
 
     dfa <- dplyr::mutate(df, markup = cms_markup(total_price, total_sales) )
 
-  }else if(tp == "markdown"){
+  }else if(tp  ==  "markdown"){
 
     dfa <- dplyr::mutate(df, markdown = cms_markdown(total_price, total_disc))
 
@@ -58,7 +58,7 @@ cmscalc <- function (df, ..., com.type = c("Markdown","Markup"), rmv.na = TRUE){
 #'
 #' @param df data.frame
 #' @param region filter the region of activities. Default "ALL"
-#' @param from the beginning of the period eg."2016-06-01"
+#' @param dt_from the beginning of the period eg."2016-06-01"
 #' @param to the end of the period eg."2016-06-30"
 #' @param set.target depends to the commercial policies in order to judge the achievement of salesforce
 #' @export
@@ -72,10 +72,10 @@ cmscalc <- function (df, ..., com.type = c("Markdown","Markup"), rmv.na = TRUE){
 #'
 cms_tracker <- function(   dataframe,
                                 ...,
-                                region="ALL",
-                                from=FALSE,
-                                to=FALSE,
-                                set.target=c("50","50","50","50","50","50")
+                                region = "ALL",
+                                from = FALSE,
+                                to = FALSE,
+                                set.target = c("50","50","50","50","50","50")
                         ){
 
   f <- formals(cms_tracker)
@@ -84,9 +84,9 @@ cms_tracker <- function(   dataframe,
 
   reg <- do.call(missing, list(namesize[3]))
 
-  from  <- do.call(missing, list(namesize[4]))
+  dt_from  <- do.call(missing, list(namesize[4]))
 
-  to  <- do.call(missing, list(namesize[5]))
+  dt_to  <- do.call(missing, list(namesize[5]))
 
   set <- do.call(missing, list(namesize[6]))
 
@@ -94,7 +94,7 @@ cms_tracker <- function(   dataframe,
 
   df <- as.data.frame(dataframe)
 
-  if(reg==FALSE){
+  if(reg == FALSE){
 
     r <- tolower(region)
 
@@ -106,28 +106,31 @@ cms_tracker <- function(   dataframe,
 
   if(nb_row < 1){stop("No records found with your entries")}
 
-  if(from==TRUE && to==TRUE){ from <- 0; to <- 0}
+  if(dt_from == TRUE && dt_to == TRUE){ dt_from <- 0; dt_to <- 0}
 
-  if(from==TRUE && to==FALSE){ from <- to}
+  if(dt_from == TRUE && dt_to == FALSE){ dt_from <- to; dt_to <- to}
 
-  if(from==FALSE && to==TRUE){ to <- from}
+  if(dt_from == FALSE && dt_to == TRUE){ dt_to <- from; dt_from <- from}
 
-  if(from==FALSE && to==FALSE){ from <- from; to <- to}
+  if(dt_from == FALSE && dt_to == FALSE){ dt_from <- from; dt_to <- to}
 
 
-  if(from == 0 && to == 0){
+  if(dt_from  ==  0 && dt_to  ==  0){
 
     df <- df %>% dplyr::group_by(agent_id,activation) %>% dplyr::summarise(nb =sum(nb_subs))
 
   }else{
 
-    df <- df[cmsdate(as.Date(df$date,"%m/%d/%Y"), from, to),]
+    df <- df[cmsdate(as.Date(df$date,"%m/%d/%Y"), dt_from, dt_to),]
+
 
     df <- df %>% dplyr::group_by(agent_id,activation) %>% dplyr::summarise(nb =sum(nb_subs))
   }
 
-  print(from)
-  print(to)
- #tidyr::spread(df,activation,nb)
+ df <- tidyr::spread(df,activation,nb)
+
+ return(as.data.frame(df))
 
 }
+
+
