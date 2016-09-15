@@ -62,6 +62,14 @@ This dashboard could allow the GTM (GoToMarket) teams to track the performance i
 #5 SLREP005  65  103 161 126  96    193  68
 ```
 
+It is possible to fix the target in acquisition for tracking the performance of the sales forces in this order (ADJ,DISC,GCN,NN,NWR,PREACT,REC). Please use `?cmstelecom` to learn more about these variables.
+
+How to run this function with the target:
+
+``` r
+cms_tracker(cmstelecom, region = c("kinshasa","katanga","bandundu"), from = "2016-06-01", to = "2016-06-03", set.target = c(100,130,90,80,75,120,100))
+```
+
 ### Author
 
 Jean Marie Cimula
