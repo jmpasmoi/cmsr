@@ -62,7 +62,7 @@ This dashboard could allow the GTM (GoToMarket) teams to track the performance i
 #5 SLREP005  65  103 161 126  96    193  68
 ```
 
-It is possible to fix the target in acquisition for tracking the performance of the sales forces in this order (ADJ,DISC,GCN,NN,NWR,PREACT,REC). Please use `?cmstelecom` to learn more about these variables.
+It is possible to fix the target in acquisition for tracking the performance of the sales forces in this order (ADJ,DISC,GCN,NN,NWR,PREACT,REC). See `?cmstelecom`  for more details.
 
 How to run this function with the target:
 
