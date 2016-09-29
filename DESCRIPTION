@@ -3,9 +3,7 @@ Type: Package
 Title: Commission management system with R
 Version: 0.1.0
 Date: 2016-09-02
-Authors@R: c(
-    person("Jean Marie", "Cimula", , "jmkacim@gmail.com", role = c("aut", "cre"))
-    )
+Authors@R: c( person("Jean Marie", "Cimula", , "jmkacim@gmail.com", role = c("aut", "cre")))
 Description: cmsr turns the incentive calculation into a very simple process
     that, after configuration and association to a target group, includes the
     incentive plan validation and simulation through what-if scenarios. This is
