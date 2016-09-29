@@ -3,8 +3,7 @@ bootswatch: cerulean
 reference:
   - title: List of functions
     desc: >
-      Keep the values of the levels the same, but change their order.
-      These are particularly useful for models, tables, and visualisations.
+      cmsr turns the incentive calculation into a very simple process that, after configuration and association to a target group, includes the incentive plan validation and simulation through what-if scenarios. This is completed, in order to determine the financial and sales potential impact before going to production (like weDo technology)
     contents:
     - cms_kpi_rate
     - cms_markdown
