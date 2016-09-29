@@ -20,7 +20,8 @@ combination of above percentage and product hierarchy up to 4th level. It means 
 case will be the corresponding % value of 5 in the mark down table.
 }
 \examples{
-List price = $2.00, Discount price = $1.90
+
+#List price <- USD2.00 and Discount price <- USD1.90
 cms_markdown(2,1.9)
 
 }
