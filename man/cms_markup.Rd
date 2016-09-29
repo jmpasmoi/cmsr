@@ -18,7 +18,8 @@ Commission based on the Mark Up Percentage
 The Commission based on the mark up value. When the mark up value is calculated, a predefined table is used to retrieve the corresponding commission % based on the Product hierarchy and Mark Up % that will be used in the sales order. This commission percentage will be divided among the number of sales representatives involved in the order, if more than one.
 }
 \examples{
-Selling price $ 1.00, Cost of product $ 0.80.
+
+#Selling price <- USD1.00 and Cost of product <- USD0.80
 cms_markup(1,0.8)
 
 }
