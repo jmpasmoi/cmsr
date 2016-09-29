@@ -19,7 +19,7 @@ The Commission based on the mark up value. When the mark up value is calculated,
 }
 \examples{
 
-#Selling price <- USD1.00 and Cost of product <- USD0.80
+#Selling price <- $1.00 and Cost of product <- $0.80
 cms_markup(1,0.8)
 
 }

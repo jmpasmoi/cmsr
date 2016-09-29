@@ -12,7 +12,7 @@
 #'
 #' @examples
 #'
-#' #Selling price <- USD1.00 and Cost of product <- USD0.80
+#' #Selling price <- $1.00 and Cost of product <- $0.80
 #' cms_markup(1,0.8)
 #'
 #' @export
@@ -39,7 +39,7 @@ cms_markup <- function(price,product){
 #'
 #' @examples
 #'
-#' #List price <- USD2.00 and Discount price <- USD1.90
+#' #List price <- $2.00 and Discount price <- $1.90
 #' cms_markdown(2,1.9)
 #'
 #' @export
