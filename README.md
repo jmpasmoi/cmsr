@@ -14,6 +14,7 @@ devtools::install_github("jmcimula/cmsr")
 
 ## Key functions
 
+
 * `data(cmsales)`: A dataset containing the sales reps activities
 * `data(cmstelecom)`: Activation tracking of sales forces in telecom industry
 * `cms_markdown()`: commission based on the Mark Down value
@@ -22,6 +23,7 @@ devtools::install_github("jmcimula/cmsr")
 * `cms_kpi_rate()`: calculation of the bonus based on the performance of the sales reps
 
 ## Example 
+
 
 ``` r
 library(cmsr) # for functions
@@ -71,6 +73,26 @@ cms_tracker(cmstelecom, region = c("kinshasa","katanga","bandundu"),
                         from = "2016-06-01", to = "2016-06-03", 
 						set.target = c(100,130,90,80,75,120,100)
 			)
+```
+
+## Visualization
+``` r
+
+library(cmsr)
+library(ggplot2)
+library(ggthemes)
+
+#First
+ggplot(cmstelecom, aes(date,nb_subs)) + geom_point(color="aquamarine4") + facet_wrap(~agent_id, nrow=2, scales="free")
+
+#Second
+ggplot(cmstelecom, aes(date,nb_subs, color=factor(region))) + geom_point()+ggtitle("Tendance des activations par province") + theme_economist() + scale_colour_economist()
+
+#Third
+ggplot(cmstelecom, aes(date,nb_subs)) + geom_point(color="darkgoldenrod4") + facet_grid(agent_id~wording)
+
+#Fourth
+ggplot(cmstelecom, aes(activation,nb_subs, color=factor(agent_id))) + geom_point() + scale_colour_tableau()
 ```
 
 ### Author
